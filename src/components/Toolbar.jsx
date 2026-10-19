@@ -9,7 +9,7 @@ export default function Toolbar() {
 
   return (
     <div className="toolbar">
-      <span>المتبقية: {activeCount}</span>
+      <span>المهام المتبقية: {activeCount}</span>
       <button
         onClick={clearCompleted}
         disabled={completedCount === 0}

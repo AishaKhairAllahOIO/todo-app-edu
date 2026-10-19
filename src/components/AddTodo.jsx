@@ -17,9 +17,9 @@ export default function AddTodo() {
       <input
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="اكتب مهمة..."
+        placeholder="اكتبي مهمة جديدة..."
       />
-      <button type="submit">إضافة</button>
+      <button type="submit">إضافة مهمة</button>
     </form>
   )
 }

@@ -45,7 +45,7 @@ export default function TodoItem({ todo }) {
           />
 
           <div className="actions">
-            <button onClick={handleSave} aria-label="حفظ">
+            <button className="btn-save" onClick={handleSave} aria-label="حفظ التعديل" title="حفظ التعديل">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2"
                 strokeLinecap="round" strokeLinejoin="round">
@@ -53,7 +53,7 @@ export default function TodoItem({ todo }) {
               </svg>
             </button>
 
-            <button onClick={handleCancel} aria-label="إلغاء">
+            <button onClick={handleCancel} aria-label="إلغاء التعديل" title="إلغاء التعديل">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2"
                 strokeLinecap="round" strokeLinejoin="round">
@@ -73,7 +73,7 @@ export default function TodoItem({ todo }) {
           </span>
 
           <div className="actions">
-            <button onClick={() => setIsEditing(true)} aria-label="تعديل">
+            <button onClick={() => setIsEditing(true)} aria-label="تعديل المهمة" title="تعديل المهمة">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2"
                 strokeLinecap="round" strokeLinejoin="round">
@@ -85,7 +85,8 @@ export default function TodoItem({ todo }) {
             <button
               className="btn-delete"
               onClick={() => removeTodo(todo.id)}
-              aria-label="حذف"
+              aria-label="حذف المهمة"
+              title="حذف المهمة"
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" strokeWidth="2"
